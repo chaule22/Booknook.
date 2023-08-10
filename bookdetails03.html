@@ -1,0 +1,135 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Le Nguyen My Chau
+  ID: s3977747
+  Acknowledgement: How to Create Responsive Navigation Bar using HTML and CSS by CodingNepal,
+Create A Draggable Card Slider in HTML CSS & JavaScript | Infinite Image Slider in JavaScript by CodingNepal, Awesome Hover Effect on Buttons Using HTML & CSS by DarkCode
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_books.css">
+    <link rel="icon" href="photos/booknook_favicon.png">
+    
+    <title> Booknook. </title>
+</head>
+<body>
+<!-- HEADER INCLUDING THE NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="sub-nav">  
+            <a class="logo-a" href="index.html"><img class="logo" src="photos/final_logo.png" alt="website logo" width="300" height="300"></a>
+            <input type="checkbox" id="click">
+            <label for="click">
+                <img class="hamburger" src="photos/hamburger_icon.png" alt="hamburger_icon">
+            </label>
+            <ul class="nav-items">
+                <li> <a class="aa" href="index.html"> Home </a></li>
+                <li> <a class="aa" href="cat_fiction.html"> Fiction  </a></li>
+                <li> <a class="aa" href="cat_nonfic.html"> Non-fiction  </a></li>
+                <li> <a class="aa" href="cat_children.html"> Children's  </a></li>
+                <li> <a class="aa" href="cat_ref.html"> Reference Books</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+  <div class="content">
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumbs">
+      <a href="index.html"><span class="navname"> Home </span></a>
+      <img src="photos/arrow.png" alt="arrow sign">
+      <a href="cat_fiction.html"><span class="navname"> Fiction </span></a>
+      <img src="photos/arrow.png" alt="arrow sign">
+      <span class="navname"> The Five-Star Weekend (Elin Hilderbrand) </span>
+  </div>
+
+<!-- BOOK PRICING AND PICTURE DETAILS  -->
+    <div class="book">
+        <div class="left">
+            <div class="img"><img src="photos/best4.jpeg" alt="fivestar"></div>
+        </div>
+
+        <div class="middle">
+            <img src="photos/best4-1.webp" alt="fivestar1">
+            <img src="photos/best4-2.webp" alt="fivestar2">
+            <img src="photos/best4-3.jpg" alt="fivestar3">
+        </div>
+        
+        <div class="right">
+          <div class="price"><h1> $14.99 </h1></div>
+        <!-- BUTTON FOR PURCHASE -->
+          <div class="atc-btn">
+            <button class="btn">
+              Add to Cart 
+          </button>
+          </div>
+            
+        </div>
+    </div>
+
+
+<!-- BOOK DESCRIPTION -->
+
+    <section class="bookdes"> 
+        
+        <div class="title">
+            <h1>The Five-Star Weekend</h1>
+            <h3>Elin Hilderbrand</h3>
+        </div>
+
+        <div class="description">
+            <p>
+                Hollis Shaw’s life seems picture-perfect. She’s the creator of the popular food blog Hungry with Hollis and is married to Matthew, a dreamy heart surgeon. But after she and Matthew get into a heated argument one snowy morning, he leaves for the airport and is killed in a car accident. The cracks in Hollis’s perfect life—her strained marriage and her complicated relationship with her daughter, Caroline—grow deeper.
+                So when Hollis hears about something called a “Five-Star Weekend”—one woman organizes a trip for her best friend from each phase of her life: her teenage years, her twenties, her thirties, and midlife—she decides to host her own Five-Star Weekend on Nantucket. But the weekend doesn’t turn out to be a joyful Hallmark movie.
+                The husband of Hollis’s childhood friend Tatum arranges for Hollis’s first love, Jack Finigan, to spend time with them, stirring up old feelings. Meanwhile, Tatum is forced to play nice with abrasive and elitist Dru-Ann, Hollis’s best friend from UNC Chapel Hill. Dru-Ann’s career as a prominent Chicago sports agent is on the line after her comments about a client’s mental health issues are misconstrued online. Brooke, Hollis’s friend from their thirties, has just discovered that her husband is having an inappropriate relationship with a woman at work. Again! And then there’s Gigi, a stranger to everyone (including Hollis) who reached out to Hollis through her blog. Gigi embodies an unusual grace and, as it hap- pens, has many secrets.
+                
+            </p>
+            
+        </div>
+
+    </section>
+
+<!-- BOOK REVIEW VIDEOS -->
+    <section class="review">
+        <h1 class="bookreview"> - Book Reviews - </h1>
+      <div class="videos">
+        <div class="iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/BZfZujV7A6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/BZfZujV7A6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      </div> 
+    </section>
+  </div>
+
+    <!-- The footer -->
+    <footer class="footer">
+        <div class="sub-footer">
+            <div class="leftdiv">
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Dvi"><img src="photos/twitter.png" alt="twitter"></a>
+                <a href="https://m.facebook.com/login/?locale=vi_VN&refsrc=deprecated"><img src="photos/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="photos/instagram.png" alt="instagram"></a>
+            </div>
+
+            <div class="rightdiv">
+                <nav>
+                    <ul class="footer-ul">
+                        <li><a href="aboutus.html">About Us</a> </li> 
+                        <li><a href="privacypolicy.html">Privacy Policy </a> </li> 
+                        <li> <a href="terms.html">Terms</a> </li>
+                        <li><a href="copyright.html">Copyright </a> </li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul> 
+                </nav>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Booknook. 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

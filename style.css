@@ -1,0 +1,365 @@
+/* <!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Le Nguyen My Chau
+  ID: s3977747
+  Acknowledgement: How to Create Responsive Navigation Bar using HTML and CSS by CodingNepal,
+Create A Draggable Card Slider in HTML CSS & JavaScript | Infinite Image Slider in JavaScript by CodingNepal
+ --> */
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1 {
+    color: black;
+}
+
+
+/* header  */
+.navbar{
+    display: flex;
+    background-color:#f5f0e1;
+    align-items: center;
+    padding: 0;
+    box-shadow: 0 4px 10px -2px gray;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.sub-nav {
+    width: 100%;
+    margin: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#click {
+    display: none;
+}
+
+.hamburger {
+    width: 32px;
+    height: 32px;
+    display: none;
+}
+
+.aa {
+    position: relative;
+    color: black;
+}
+
+.aa::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(105, 104, 96);
+    width: 0;
+    height: 8%;
+    bottom: -1px;
+    left: 0;
+    transition: 0.25s;
+}
+
+.aa:hover::after {
+    width: 100%;
+}
+
+.navbar .nav-items {
+    display: flex;
+    font-weight: bold;
+
+}
+
+.navbar>ul>li:hover{
+    cursor: pointer;
+    color: #84847c;
+}
+
+.navbar li{
+    display: inline-block;
+    padding-right: 25px;
+}
+
+/* content */
+.content {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+}
+
+.genre {
+    background-color: #e9e2cd;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category {
+    margin: 32px 10%;
+}
+
+.products {
+    display: grid;
+    overflow: hidden;
+    column-gap: 0.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 5) - 12px);
+}
+
+.product-img img{
+    height: 300px;
+    width: 200px;
+    margin: 71px 30px 71px 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+.product-img {
+    margin-right: 30px;
+}
+
+.category .videos {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.iframe {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
+    padding: 0 2%;
+
+}
+
+
+/* footer */
+.footer {
+    background-color:#f5f0e1;
+    padding: 0 4%;
+    font-size: large;
+    padding: 0 24px;
+    padding-top: 30px;
+    padding-bottom: 16px;
+    height: 100%;
+}
+
+.sub-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.rightdiv a {
+    color: black;
+}
+
+.footer-ul li {
+    display: inline-block;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.footer-ul li:hover {
+    text-decoration: underline;
+}
+
+.footer .leftdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.leftdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftdiv img{
+    width: 50px;
+    height: 50px;
+}
+
+.leftdiv p {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* end of footer */
+
+/* media */
+@media (max-width: 992px) {
+    .logo {
+        width: 5vw; 
+        overflow: hidden;   
+    }
+
+    .navbar {
+        flex-direction: row-reverse;
+        padding-right: 3%;
+    }
+
+    .logo {
+        width: 165px;
+        height: 100px;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 200vh;
+        top: 107px;
+        align-items: center;
+        background-color: #dbd2ba;
+        right: -100%;
+        transition: all 0.5s;
+    }
+
+    .nav-items li {
+        padding: 0;
+    }
+
+    #click:checked ~ .nav-items {
+        right: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+    .products {
+        grid-auto-columns: auto;
+        overflow: auto;
+    }
+
+    .product-img img{
+        height: 270px;
+        width: 200px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .category .videos {
+        grid-auto-flow: row;
+        row-gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100%;    
+        height: 100%;
+    }
+
+    .navbar .logo-a {
+        width: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar a{
+        width: 40%;
+    }
+
+    .navbar {
+        flex-direction: row-reverse;
+        padding-right: 3%;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 200vh;
+        top: 70px;
+        align-items: center;
+        background-color: #dbd2ba;
+        right: -100%;
+        transition: all 0.5s;
+    }
+
+    .nav-items li {
+        padding: 0;
+    }
+
+    #click:checked ~ .nav-items {
+        right: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    
+    .products {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        grid-auto-columns: 100%;
+    }
+
+    .products::-webkit-scrollbar {
+        display: none;
+    }
+
+    .product-img {
+        display: flex;
+        justify-content: center;
+        scroll-snap-align: center;
+        margin: 0;
+    }
+
+    .product-img img{
+        height: 300px;
+    }
+
+    .category {
+        margin: 32px 0;
+    }
+
+    .footer-ul li{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .sub-footer {
+        flex-direction: column-reverse;
+    }
+
+    .leftdiv {
+        width: 220px !important;
+    }
+}
+

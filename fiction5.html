@@ -1,0 +1,133 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Le Nguyen My Chau
+  ID: s3977747
+  Acknowledgement: How to Create Responsive Navigation Bar using HTML and CSS by CodingNepal,
+Create A Draggable Card Slider in HTML CSS & JavaScript | Infinite Image Slider in JavaScript by CodingNepal, Awesome Hover Effect on Buttons Using HTML & CSS by DarkCode
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_books.css">
+    <link rel="icon" href="photos/booknook_favicon.png">
+    
+    <title> Booknook. </title>
+</head>
+<body>
+
+<!-- HEADER INCLUDING THE NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="sub-nav">  
+            <a class="logo-a" href="index.html"><img class="logo" src="photos/final_logo.png" alt="website logo" width="300" height="300"></a>
+            <input type="checkbox" id="click">
+            <label for="click">
+                <img class="hamburger" src="photos/hamburger_icon.png" alt="hamburger_icon">
+            </label>
+            <ul class="nav-items">
+                <li> <a class="aa" href="index.html"> Home </a></li>
+                <li> <a class="aa" href="cat_fiction.html"> Fiction  </a></li>
+                <li> <a class="aa" href="cat_nonfic.html"> Non-fiction  </a></li>
+                <li> <a class="aa" href="cat_children.html"> Children's  </a></li>
+                <li> <a class="aa" href="cat_ref.html"> Reference Books</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+  <div class="content">
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumbs">
+      <a href="index.html"><span class="navname"> Home </span></a>
+      <img src="photos/arrow.png" alt="arrow sign">
+      <a href="cat_fiction.html"><span class="navname"> Fiction </span></a>
+      <img src="photos/arrow.png" alt="arrow sign">
+      <span class="navname"> The Second Ending (Michelle Hoffman) </span>
+  </div>
+
+<!-- BOOK PRICING AND PICTURE DETAILS  -->
+    <div class="book">
+        <div class="left">
+            <div class="img"><img src="photos/fiction5.jpg" alt="secondending"></div>
+        </div>
+
+        <div class="middle">
+            <img src="photos/fic5-1.jpg" alt="secondending1">
+            <img src="photos/fic5-2.jpg" alt="secondending2">
+            <img src="photos/fic5-3.jpg" alt="secondending3">
+        </div>
+        
+        <div class="right">
+          <div class="price"><h1> $14.99 </h1></div>
+        <!-- BUTTON FOR PURCHASE -->
+          <div class="atc-btn">
+            <button class="btn">
+              Add to Cart 
+          </button>
+          </div>
+            
+        </div>
+    </div>
+
+<!-- BOOK DESCRIPTION -->
+
+    <section class="bookdes"> 
+        
+        <div class="title">
+            <h1>The Second Ending</h1>
+            <h3> Michelle Hoffman</h3>
+        </div>
+
+        <div class="description">
+            <p>
+                Prudence Childs was once the most famous kindergartner on the planet. After teaching herself to play piano at age three, she performed at the White House, appeared on talk shows, and inspired a generation to take up lessons. But as adolescence closed in, Prudence realized that she was being exploited and pushed into fame by her cruel grandmother, so she ran away. Broke and alone, she took a job writing commercial jingles, which earned her a fortune but left her creatively adrift.
+                Now forty-eight, with her daughters away at school, Prudence agrees to compete on a wildly popular dueling pianos TV show to reconnect with her inner artist. Unfortunately, her new spotlight captures the attention of her terrible ex-husband, Bobby, who uses the opportunity to blackmail her over a long-buried secret. If she doesn’t win, she won’t just be a musical failure; she’ll also be bankrupt and exposed in front of millions.
+                Her on-air rival, virtuoso Alexei Petrov, a young internet sensation with a massive audience and a dreamy Russian accent, has problems of his own. His demanding parents made him a technically flawless pianist but left him without friends, hobbies, or any kind of life outside his music.
+                As they prepare to face off onstage, the retired prodigy and the exhausted wunderkind realize that the competition is their chance to prove to their bad exes, tyrannical family members, and, most important, themselves that it’s never too late to write a new ending.
+            </p>  
+        </div>
+    </section>
+
+<!-- BOOK REVIEW VIDEOS -->
+    <section class="review">
+        <h1 class="bookreview"> - Book Reviews - </h1>
+      <div class="videos">
+        <div class="iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/K-2fZiyJ3Ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="iframe"> <iframe width="560" height="315" src="https://www.youtube.com/embed/xK_YNvuIgog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      </div>
+    </section>
+  </div>
+
+<!-- The footer -->
+    <footer class="footer">
+        <div class="sub-footer">
+            <div class="leftdiv">
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Dvi"><img src="photos/twitter.png" alt="twitter"></a>
+                <a href="https://m.facebook.com/login/?locale=vi_VN&refsrc=deprecated"><img src="photos/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="photos/instagram.png" alt="instagram"></a>
+            </div>
+
+            <div class="rightdiv">
+                <nav>
+                    <ul class="footer-ul">
+                        <li><a href="aboutus.html">About Us</a> </li> 
+                        <li><a href="privacypolicy.html">Privacy Policy </a> </li> 
+                        <li> <a href="terms.html">Terms</a> </li>
+                        <li><a href="copyright.html">Copyright </a> </li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>  
+                </nav>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Booknook. 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

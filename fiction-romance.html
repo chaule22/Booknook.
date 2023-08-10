@@ -1,0 +1,126 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Le Nguyen My Chau
+  ID: s3977747
+  Acknowledgement: How to Create Responsive Navigation Bar using HTML and CSS by CodingNepal,
+Create A Draggable Card Slider in HTML CSS & JavaScript | Infinite Image Slider in JavaScript by CodingNepal
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="photos/booknook_favicon.png">
+    <title> Booknook. </title>
+</head>
+
+<body>
+    <!-- HEADER INCLUDING THE NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="sub-nav">  
+            <a class="logo-a" href="index.html"><img class="logo" src="photos/final_logo.png" alt="website logo" width="300" height="300"></a>
+            <input type="checkbox" id="click">
+            <label for="click">
+                <img class="hamburger" src="photos/hamburger_icon.png" alt="hamburger_icon">
+            </label>
+            <ul class="nav-items">
+                <li> <a class="aa" href="index.html"> Home </a></li>
+                <li> <a class="aa" href="cat_fiction.html"> Fiction  </a></li>
+                <li> <a class="aa" href="cat_nonfic.html"> Non-fiction  </a></li>
+                <li> <a class="aa" href="cat_children.html"> Children's  </a></li>
+                <li> <a class="aa" href="cat_ref.html"> Reference Books</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <div class="content">
+        <div class="category">
+            <div class="genre">
+                <h1>Romance</h1>
+            </div>
+            <div class="products">
+                <div class="product-img"><a href="cb01.html"><img src="photos/child1.jpeg" alt="fic1"></a></div>
+                <div class="product-img"><a href="fiction02.html"><img src="photos/fiction2.jpeg" alt="fic2"></a></div>
+                <div class="product-img"><a href="fiction3.html"><img src="photos/fiction3.jpg" alt="fic3"></a></div>
+                <div class="product-img"><a href="bookdetails.html"><img src="photos/best1.jpeg" alt="bestsellers1"></a></div>
+                <div class="product-img"><a href="cb03.html"><img src="photos/child3.jpg" alt="bestsellers5"></a></div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="products">
+                <div class="product-img"><a href="bookdetails04.html"><img src="photos/fiction4.jpg" alt="fic4"></a></div>
+                <div class="product-img"><a href="fiction5.html"><img src="photos/fiction5.jpg" alt="fic5"></a></div>
+                <div class="product-img"><a href="nf03.html"><img src="photos/nonfic3.jpeg" alt="nonfic3"></a></div>
+                <div class="product-img"><a href="nf05.html"><img src="photos/nonfic5.jpeg" alt="nonfic5"></a></div>
+                <div class="product-img"><a href="bookdetails03.html"><img src="photos/best4.jpeg" alt="bestsellers4"></a></div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="products">
+                <div class="product-img"><a href="nf01.html"><img src="photos/nonfic1.jpeg" alt="nonfic1"></a></div>
+                <div class="product-img"><a href="nf02.html"><img src="photos/nonfic2.jpeg" alt="nonfic2"></a></div>
+                <div class="product-img"><a href="bookdetails03.html"><img src="photos/fiction1.jpg" alt="bestsellers3"></a></div>
+                <div class="product-img"><a href="nf04.html"><img src="photos/nonfic4.jpg" alt="nonfic4"></a></div>
+                <div class="product-img"><a href="bookdetails01.html"><img src="photos/best2-main.jpeg" alt="bestsellers2"></a></div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="products">
+                <div class="product-img"><a href="rf01.html"><img src="photos/ref1.jpg" alt="child1"></a></div>
+                <div class="product-img"><a href="rf03.html"><img src="photos/ref3.jpeg" alt="child2"></a></div>
+                <div class="product-img"><a href="cb03.html"><img src="photos/child3.jpg" alt="child3"></a></div>
+                <div class="product-img"><a href="fiction5.html"><img src="photos/fiction5.jpg" alt="child4"></a></div>
+                <div class="product-img"><a href="cb05.html"><img src="photos/child5.jpg" alt="child5"></a></div>
+            </div>
+        </div>
+
+
+        <div class="category">
+            <div class="genre">
+                <h1> - Books Recommendation - </h1>
+            </div>
+            <div class="videos">
+                <div class="iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/N5DG0x0OxYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/4IdhzYL-61s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></iframe></div>
+              </div>
+        </div>
+    </div>        
+
+
+
+    <!-- The footer -->
+    <footer class="footer">
+        <div class="sub-footer">
+            <div class="leftdiv">
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Dvi"><img src="photos/twitter.png" alt="twitter"></a>
+                <a href="https://m.facebook.com/login/?locale=vi_VN&refsrc=deprecated"><img src="photos/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="photos/instagram.png" alt="instagram"></a>
+            </div>
+
+            <div class="rightdiv">
+                <nav>
+                    <ul class="footer-ul">
+                        <li><a href="aboutus.html">About Us</a> </li> 
+                        <li><a href="privacypolicy.html">Privacy Policy </a> </li> 
+                        <li> <a href="terms.html">Terms</a> </li>
+                        <li><a href="copyright.html">Copyright </a> </li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>  
+                </nav>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Booknook. 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

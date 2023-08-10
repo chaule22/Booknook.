@@ -1,0 +1,130 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Le Nguyen My Chau
+  ID: s3977747
+  Acknowledgement: How to Create Responsive Navigation Bar using HTML and CSS by CodingNepal,
+Create A Draggable Card Slider in HTML CSS & JavaScript | Infinite Image Slider in JavaScript by CodingNepal, Awesome Hover Effect on Buttons Using HTML & CSS by DarkCode
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_books.css">
+    <link rel="icon" href="photos/booknook_favicon.png">
+    
+    <title> Booknook. </title>
+</head>
+<body>
+
+<!-- HEADER INCLUDING THE NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="sub-nav">  
+            <a class="logo-a" href="index.html"><img class="logo" src="photos/final_logo.png" alt="website logo" width="300" height="300"></a>
+            <input type="checkbox" id="click">
+            <label for="click">
+                <img class="hamburger" src="photos/hamburger_icon.png" alt="hamburger_icon">
+            </label>
+            <ul class="nav-items">
+                <li> <a class="aa" href="index.html"> Home </a></li>
+                <li> <a class="aa" href="cat_fiction.html"> Fiction  </a></li>
+                <li> <a class="aa" href="cat_nonfic.html"> Non-fiction  </a></li>
+                <li> <a class="aa" href="cat_children.html"> Children's  </a></li>
+                <li> <a class="aa" href="cat_ref.html"> Reference Books</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+  <div class="content">
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumbs">
+      <a href="index.html"><span class="navname"> Home </span></a>
+      <img src="photos/arrow.png" alt="arrow sign">
+      <a href="cat_ref.html"><span class="navname"> Reference Books </span></a>
+      <img src="photos/arrow.png" alt="arrow sign">
+      <span class="navname"> Oxford Spanish Dictionary </span>
+  </div>
+
+<!-- BOOK PRICING AND PICTURE DETAILS  -->
+    <div class="book">
+        <div class="left">
+            <div class="img"><img src="photos/ref5.jpg" alt="Oxford"></div>
+        </div>
+
+        <div class="middle">
+            <img src="photos/ref5.jpg" alt="Oxford1">
+            <img src="photos/ref5.jpg" alt="Oxford2">
+            <img src="photos/ref5.jpg" alt="Oxford3">
+        </div>
+        
+        <div class="right">
+          <div class="price"><h1> $14.99 </h1></div>
+        <!-- BUTTON FOR PURCHASE -->
+          <div class="atc-btn">
+            <button class="btn">
+              Add to Cart 
+          </button>
+          </div>
+            
+        </div>
+    </div>
+
+<!-- BOOK DESCRIPTION -->
+
+    <section class="bookdes"> 
+        
+        <div class="title">
+            <h1>Oxford Spanish Dictionary </h1>
+            <h3>Oxford University Press</h3>
+        </div>
+
+        <div class="description">
+            <p>
+                The Oxford Essential Spanish Dictionary is a new compact Spanish-English and English-Spanish dictionary that offers up-to-date coverage of all the essential day-to-day vocabulary with over 40,000 words and phrases and 60,000 translations. This dictionary is easy to use and ideal for travel, work, or study.
+            </p>  
+        </div>
+    </section>
+
+<!-- BOOK REVIEW VIDEOS -->
+    <section class="review">
+        <h1 class="bookreview"> - Book Reviews - </h1>
+      <div class="videos">
+        <div class="iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/uhRwp0019V0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="iframe"> <iframe width="560" height="315" src="https://www.youtube.com/embed/Fo2cSioY6wI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      </div>
+    </section>
+  </div>
+
+<!-- The footer -->
+    <footer class="footer">
+        <div class="sub-footer">
+            <div class="leftdiv">
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Dvi"><img src="photos/twitter.png" alt="twitter"></a>
+                <a href="https://m.facebook.com/login/?locale=vi_VN&refsrc=deprecated"><img src="photos/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="photos/instagram.png" alt="instagram"></a>
+            </div>
+
+            <div class="rightdiv">
+                <nav>
+                    <ul class="footer-ul">
+                        <li><a href="aboutus.html">About Us</a> </li> 
+                        <li><a href="privacypolicy.html">Privacy Policy </a> </li> 
+                        <li> <a href="terms.html">Terms</a> </li>
+                        <li><a href="copyright.html">Copyright </a> </li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>  
+                </nav>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Booknook. 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Le Nguyen My Chau
+  ID: s3977747
+  Acknowledgement: How to Create Responsive Navigation Bar using HTML and CSS by CodingNepal,
+Create A Draggable Card Slider in HTML CSS & JavaScript | Infinite Image Slider in JavaScript by CodingNepal, Awesome Hover Effect on Buttons Using HTML & CSS by DarkCode
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_books.css">
+    <link rel="icon" href="photos/booknook_favicon.png">
+    
+    <title> Booknook. </title>
+</head>
+<body>
+<!-- HEADER INCLUDING THE NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="sub-nav">  
+            <a class="logo-a" href="index.html"><img class="logo" src="photos/final_logo.png" alt="website logo" width="300" height="300"></a>
+            <input type="checkbox" id="click">
+            <label for="click">
+                <img class="hamburger" src="photos/hamburger_icon.png" alt="hamburger_icon">
+            </label>
+            <ul class="nav-items">
+                <li> <a class="aa" href="index.html"> Home </a></li>
+                <li> <a class="aa" href="cat_fiction.html"> Fiction  </a></li>
+                <li> <a class="aa" href="cat_nonfic.html"> Non-fiction  </a></li>
+                <li> <a class="aa" href="cat_children.html"> Children's  </a></li>
+                <li> <a class="aa" href="cat_ref.html"> Reference Books</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+  <div class="content">
+    <!-- BREADCRUMBS -->
+    <div class="breadcrumbs">
+      <a href="index.html"><span class="navname"> Home </span></a>
+      <img src="photos/arrow.png" alt="arrow sign">
+      <a href="cat_fiction.html"><span class="navname"> Fiction </span></a>
+      <img src="photos/arrow.png" alt="arrow sign">
+      <span class="navname"> Too Late (Colleen Hoover)  </span>
+  </div>
+
+<!-- BOOK PRICING AND PICTURE DETAILS  -->
+    <div class="book">
+        <div class="left">
+            <div class="img"><img src="photos/best1.jpeg" alt="toolate"></div>
+        </div>
+
+        <div class="middle">
+            <div class="small-book"><img src="photos/best1_1.webp" alt="toolate1"></div>
+            <div class="small-book"><img src="photos/best1_2.jpeg" alt="toolate2"></div>
+            <div class="small-book"><img src="photos/best1_3.jpeg" alt="toolate3"></div>
+        </div>
+        
+        <div class="right">
+          <div class="price"><h1> $14.99 </h1></div>
+        <!-- BUTTON FOR PURCHASE -->
+          <div class="atc-btn">
+            <button class="btn">
+              Add to Cart 
+          </button>
+          </div>
+            
+        </div>
+    </div>
+
+
+<!-- BOOK DESCRIPTION -->
+
+    <section class="bookdes"> 
+        
+        <div class="title">
+            <h1>Too Late</h1>
+            <h3>Colleen Hoover</h3>
+        </div>
+
+        <div class="description">
+            <p>
+            A psychological suspense novel of obsession and dangerous love. The definitive edition of Too Late from the #1 New York Times bestselling author of Verity .
+                Sloan will go through hell and back for those she loves. And she does so, every single day. Caught up with the alluring Asa Jackson, a notorious drug trafficker, Sloan has finally found a lifeline to cling to, even if it’s meant compromising her morals. She was in dire straits trying to pay for her brother’s care until she met Asa. But as Sloan became emotionally and economically reliant on him, he in turn developed a disturbing obsession with her—one that becomes increasingly dangerous every day.
+                When undercover DEA agent Carter enters the picture, Sloan’s surprised to feel an immediate attraction between them, despite knowing that if Asa finds out, he will kill him. And Asa has always been a step ahead of everyone in his life, including Sloan. No one has ever gotten in his way.
+                No one except Carter.
+                Together, Sloan and Carter must find a way out before it’s too late…   
+            </p>
+            
+        </div>
+
+    </section>
+
+<!-- BOOK REVIEW VIDEOS -->
+    <section class="review">
+        <h1 class="bookreview"> - Book Reviews - </h1>
+      <div class="videos">
+        <div class="iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/xdNoKeFTv5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/e2NhLy34Jfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      </div>
+    </section>
+  </div>
+
+    <!-- The footer -->
+    <footer class="footer">
+        <div class="sub-footer">
+            <div class="leftdiv">
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Dvi"><img src="photos/twitter.png" alt="twitter"></a>
+                <a href="https://m.facebook.com/login/?locale=vi_VN&refsrc=deprecated"><img src="photos/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="photos/instagram.png" alt="instagram"></a>
+            </div>
+
+            <div class="rightdiv">
+                <nav>
+                    <ul class="footer-ul">
+                        <li><a href="aboutus.html">About Us</a> </li> 
+                        <li><a href="privacypolicy.html">Privacy Policy </a> </li> 
+                        <li> <a href="terms.html">Terms</a> </li>
+                        <li><a href="copyright.html">Copyright </a> </li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>  
+                </nav>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Booknook. 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
